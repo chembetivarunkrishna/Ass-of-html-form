@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form Assignment</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        margin:0;
+        padding:20px;
+    }
+
+    .container{
+        width:500px;
+        margin:auto;
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        text-align:center;
+        color:#333;
+    }
+
+    label{
+        display:block;
+        margin-top:10px;
+        font-weight:bold;
+    }
+
+    input{
+        width:100%;
+        padding:8px;
+        margin-top:5px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        box-sizing:border-box;
+    }
+
+    .inline-group{
+        display:flex;
+        gap:15px;
+        margin-top:8px;
+    }
+
+    .buttons{
+        margin-top:20px;
+        text-align:center;
+    }
+
+    button{
+        padding:10px 20px;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    .submit-btn{
+        background:#28a745;
+        color:white;
+    }
+
+    .reset-btn{
+        background:#dc3545;
+        color:white;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>User Registration Form</h2>
+
+    <form>
+
+        <!-- Text -->
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <!-- Password -->
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <!-- Email -->
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <!-- Phone -->
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <!-- URL -->
+        <label>Website URL</label>
+        <input type="url" placeholder="https://example.com" required>
+
+        <!-- Date -->
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <!-- Datetime Local -->
+        <label>Appointment Date & Time</label>
+        <input type="datetime-local" required>
+
+        <!-- File -->
+        <label>Upload Resume</label>
+        <input type="file" required>
+
+        <!-- Radio Button -->
+        <label>Gender</label>
+        <div class="inline-group">
+            <span><input type="radio" name="gender" required> Male</span>
+            <span><input type="radio" name="gender"> Female</span>
+        </div>
+
+        <!-- Checkbox -->
+        <label>Skills</label>
+        <div class="inline-group">
+            <span><input type="checkbox"> HTML</span>
+            <span><input type="checkbox"> CSS</span>
+            <span><input type="checkbox"> JavaScript</span>
+        </div>
+
+        <!-- Range -->
+        <label>Experience Level (0-10)</label>
+        <input type="range" min="0" max="10">
+
+        <!-- Color -->
+        <label>Favorite Color</label>
+        <input type="color">
+
+        <!-- Block Level Element -->
+        <p>This is a block-level element inside the form.</p>
+
+        <!-- Inline Element -->
+        <span>This is an inline element inside the form.</span>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
